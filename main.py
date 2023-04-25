@@ -27,7 +27,7 @@ class Cripto_change:
 
     def Telegram_bot(self, text):
         token = ""
-        chat_id = ""
+        chat_id = "-"
         url_req = "https://api.telegram.org/bot" + token + "/sendMessage" + "?chat_id=" + chat_id + "&text=" + text
         results = requests.get(url_req)
         print(results.json())
